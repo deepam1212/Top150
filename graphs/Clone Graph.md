@@ -1,3 +1,4 @@
+https://leetcode.com/problems/clone-graph/description/
 ```swift
 Given a reference of a node in a connected undirected graph.
 
@@ -67,5 +68,36 @@ The Graph is connected and all nodes can be visited starting from the given node
 **Solution**
 
 ```swift
+/**
+ * Definition for a Node.
+ * public class Node {
+ *     public var val: Int
+ *     public var neighbors: [Node?]
+ *     public init(_ val: Int) {
+ *         self.val = val
+ *         self.neighbors = []
+ *     }
+ * }
+ */
 
+class Solution {
+    var visited: [Node: Node] = [Node: Node]()
+    func cloneGraph(_ node: Node?) -> Node? {
+        guard let node = node else {return nil}
+        if let cloned = visited[node] {
+            return cloned
+        }
+        let clone = Node(node.val)
+        visited[node] = clone
+        for neibour in node.neighbors {
+            clone.neighbors.append(cloneGraph(neibour))
+        }
+        return clone
+    }
+}
+```
+
+```swift
+Time Complexity: O(N + E)
+Space Complexity: O(N) (for hashmap + recursion stack / queue)
 ```
