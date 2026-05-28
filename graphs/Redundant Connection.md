@@ -7,8 +7,8 @@ Return an edge that can be removed so that the resulting graph is a tree of n no
 ```
  
 
-
 https://leetcode.com/problems/redundant-connection/
+
 **Example 1:**
 
 
