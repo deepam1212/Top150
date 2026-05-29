@@ -5,7 +5,6 @@ Given the root of a binary tree, invert the tree, and return its root.
 https://leetcode.com/problems/invert-binary-tree/description/
 
 **Example 1:**
-![Trapping Rain Water Example](../assets/maxarea1-grid.jpg)
 
 ![Trapping Rain Water Example](../assets/invert1-tree.jpg)
 ```swift
