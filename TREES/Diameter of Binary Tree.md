@@ -10,6 +10,7 @@ The length of a path between two nodes is represented by the number of edges bet
 **Example 1:**
 ![assets](../assets/diamtree.jpg)
 
+
 ```swift
 Input: root = [1,2,3,4,5]
 Output: 3
