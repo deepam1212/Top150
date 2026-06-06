@@ -57,3 +57,18 @@ class Solution {
     }
 }
 ```
+**Another Solution**
+
+```swift
+class Solution {
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+    var numSet: Set<Int> = []
+    numSet = Set(nums)
+    if numSet.count == nums.count {
+        return false
+    }
+    
+    return true
+}
+}
+```
