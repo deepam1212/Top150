@@ -48,13 +48,13 @@ class Solution {
     func findMin(_ nums: [Int]) -> Int {
         //
         var left: Int = 0
-        var right: Int = nums.coun - 1
+        var right: Int = nums.count - 1
         while(left < right) {
-            let middle: Int = right + ((left - right) / 2)
-            if nums[mid] > nums[right] {
-                left = mid + 1
+            let middle: Int = left + ((right - left) / 2)
+            if nums[middle] > nums[right] {
+                left = middle + 1
             } else {
-                right = mid
+                right = middle
             }
         }
         //
