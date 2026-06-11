@@ -45,6 +45,7 @@ All the numbers of nums are unique.
 
 **Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?**
 **Solution**
+```swift
 class Solution {
     func missingNumber(_ nums: [Int]) -> Int {
         //
@@ -57,6 +58,6 @@ class Solution {
         return totalSum - mySum
     }
 }
-```swift
+```
 
 ```
